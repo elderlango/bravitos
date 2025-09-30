@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Eldo Diviu</title>
+  <meta name="description" content="Página personal de presentación: quién soy, fotografía y pasatiempos." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#96a0b6;--accent:#6ee7b7}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#071023 0%, #071627 100%); color:#e6eef8; line-height:1.5}
+    .wrap{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;gap:24px;align-items:center}
+    .avatar{width:150px;height:150px;border-radius:12px;overflow:hidden;flex:0 0 150px;border:2px solid rgba(255,255,255,.06)}
+    img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .card{background:rgba(255,255,255,.02);padding:18px;border-radius:12px;margin-top:18px;border:1px solid rgba(255,255,255,.03)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .hobby{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);min-height:120px}
+    footer{margin-top:28px;color:var(--muted);font-size:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#0ea5a9,#7dd3fc);color:#032027;text-decoration:none;font-weight:600}
+    code{background:#031018;padding:2px 6px;border-radius:6px;font-family:monospace;color:#9be7d5}
+    @media(max-width:720px){header{flex-direction:column;align-items:flex-start}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="avatar">
+        <!-- Foto de ejemplo; cámbiala por tu propia URL o archivo "profile.jpg" -->
+        <img src="foto.jpg" alt="Foto de perfil" />
+      </div>
+      <div>
+        <h1>Miguel Vargas</h1>
+        <p class="lead">Estudiante de Ciencias de la Computación apasionado por la tecnología web, interfaces y proyectos híbridos para dispositivos (smart TV + smartphone). Me interesa convertir habilidades en código en fuentes de ingreso en los próximos meses.</p>
+        <div style="margin-top:10px">
+          <!-- <a class="btn" href="#contact">Compartir / Contacto</a> -->
+        </div>
+      </div>
+    </header>
+
+    <section class="card" id="about">
+      <h2>¿Quién soy?</h2>
+      <p>Soy un desarrollador y estudiante de ciencias de la computación enfocado en arquitectura de aplicaciones y soluciones híbridas (smart TV y smartphone). Me gusta prototipar mockups y avanzar rápido a pruebas funcionales. Tengo experiencia en código, traducción y creación de activos digitales; mi meta es generar ingresos en menos de un año para mayor independencia. Prefiero comunicación directa y práctica.</p>
+    </section>
+
+    <section class="card" id="hobbies">
+      <h2>Pasatiempos</h2>
+      <div class="grid">
+        <div class="hobby">
+          <h3>Coding & Prototipado</h3>
+          <p>Me gusta armar prototipos, experimentar con UI y crear pequeñas apps: pixel art para interfaces, conectividad entre dispositivos y scripts que automatizan tareas.</p>
+        </div>
+        <div class="hobby">
+          <h3>Cocina & Experimentos</h3>
+          <p>Hacer recetas, mejorar sabores (como ramen casero o pancakes) y jugar con ingredientes para crear salsas y bebidas. Disfruto iterar sabores y técnicas sencillas con ingredientes locales.</p>
+        </div>
+        <div class="hobby">
+          <h3>Pixel art & Diseño</h3>
+          <p>Diseñar sprites y pequeños assets 64×64, trabajar con paletas limitadas y crear elementos para juegos o mockups visuales.</p>
+        </div>
+        <div class="hobby">
+          <h3>Videojuegos / MOBA</h3>
+          <p>Interés por roles y dinámicas en MOBAs; analizar cómo la personalidad se refleja en la elección de roles.</p>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <footer>
+      <p>mexico 2025.</p>
+    </footer>
+  </main>
+</body>
+</html>
